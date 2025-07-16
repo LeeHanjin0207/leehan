@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeeHanjin</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+   <header id="header">
+  <!-- 이력서 헤더 : 이름과 타이틀 작성 -->
+  <h1>Mechanical Engineering Student 
+    <br> CFD · CAE  Machine Learning</h1>
+  <hr>
+  기계정보공학과 이한진
+  <hr>
+</header>
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who is PEACEIN</title>
+  <script src="https://kit.fontawesome.com/a9a68f8b3f.js" crossorigin="anonymous"></script>
+</head>
+
+<main>
+  <article id="mainLeft">
+    <section>
+         <h2><p><span style="border-radius: 5em; padding: 0.6em 1em; background: #F9F9F9; box-shadow: 1px 2px 10px rgba(0,0,0,0.2);  margin-left: 5px;">CONTACT</span></p></h2>
+  <ul>
+    
+
+ <p>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <a href="mailto:dlgkswls9719@gmail.com">dlgkswls9719@gmail.com</a>
+      </p>
+      <p>
+
+      <!-- 소셜 미디어를 비롯한 연락처 정보 -->📞: 010-4997-9719<br>  
+       
+    </section>
+
+    
+
+<section>
+      <h2><p><span style="border-radius: 5em; padding: 0.6em 1em; background: #F9F9F9; box-shadow: 1px 2px 10px rgba(0,0,0,0.2);  margin-left: 5px;">Academic Progress</span></p></h2>
+  <ul>
+
+      <!-- 학력 및 성적 변화에 대한 그래프 보여주기 -->     
+      - 홍익대학교 과학기술대학<br>
+      - 기계정보공학과 재학 중 (2019.03 ~ 현재)<br>
+      - 학부 졸업 논문 주제: 펠티어 기반 방호복의 열관리 시스템 CFD 및 ElectroFlo 해석 및 구조 최적화
+        
+    </section>         
+
+<canvas id="gradeChart" width="600" height="300"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+
+
+<script>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>GPA 그래프</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
+  <style>
+    #gradeChart {
+      max-width: px;
+      margin: px auto;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gradeChart"></canvas>
+
+  <script>
+    const ctx = document.getElementById('gradeChart').getContext('2d');
+    const gradeChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['1학년 1학기', '1학년 2학기', '2학년 1학기', '2학년 2학기', '3학년 1학기', '3학년 2학기', '4학년 1학기'],
+        datasets: [{
+          label: 'GPA',
+          data: [2.63, 1.46, 3.61, 3.88, 4.35, 4.24, 4.3],
+          borderColor: 'rgba(54, 162, 235, 1)',
+          backgroundColor: 'rgba(54, 162, 235, 0.2)',
+          borderWidth: 2,
+          pointRadius: 4,
+          pointBackgroundColor: 'blue',
+          fill: true,
+          tension: 0.3
+        }]
+      },
+      options: {
+        plugins: {
+          title: {
+            display: true,
+            text: '학기별 GPA 변화 추이'
+          },
+          legend: {
+            display: false
+          },
+          annotation: {
+            annotations: {
+              line4: {
+                type: 'line',
+                yMin: 4.0,
+                yMax: 4.0,
+                borderColor: 'red',
+                borderWidth: 2,
+                label: {
+                  
+                  enabled: true,
+                  position: 'end'
+                }
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 4.5,
+            ticks: {
+              stepSize: 1
+            },
+            title: {
+              display: true,
+              text: 'GPA'
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
+
+</script>
+
+
+
+    
+   <section>
+  <h2><p><span style="border-radius: 5em; padding: 0.6em 1em; background: #F9F9F9; box-shadow: 1px 2px 10px rgba(0,0,0,0.2);  margin-left: 5px;">SKILL</span></p></h2>
+  <ul>
+
+    
+    <li><strong>CAE</strong> 
+        <br>(HyperWorks): SimLab, EDEM, SimSolid, Inspire, NanoFluidX, ElectroFlo, AcuSolve 
+        <br>(ANSYS): Static Structural, Modal, Steady/Transient Structural, Steady/Transient Thermal </li>
+    <li><strong>CAD
+        <br>
+    </strong> CATIA, Fusion 360, SpaceClaim, FreeCAD</li>
+    <li><strong>Machine Learning
+        <br>
+    </strong> GPR, Random Forest, SVR, SHAP, LIME (Python 기반 해석 및 시각화)</li>
+    <li><strong>하드웨어 및 실험 자동화
+        <br>
+    </strong> Raspberry Pi, Arduino, 센서 기반 데이터 측정 및 후처리 시스템 구축</li>
+  </ul>
+</section>
+
+
+
+ <section>
+  <h2><p><span style="border-radius: 5em; padding: 0.6em 1em; background: #F9F9F9; box-shadow: 1px 2px 10px rgba(0,0,0,0.2);  margin-left: 5px;">Graduate Study Plan</span></p></h2>
+  <ul>
+    <p>
+      학부 재학 중 다양한 프로젝트에 참여하며 CAE 해석 역량을 키워왔고, 열유체 해석과 멀티피직스 시뮬레이션에 꾸준히 관심을 가져왔습니다.
+      <br>
+    특히 CFD와 DEM을 연계한 커플링 해석, 열전달 및 구조 연성 해석 등을 수행하며 실전 경험을 쌓았고, 직접 실험도 진행하여 해석 결과와 비교·분석하는 역량도 갖추고 있습니다.
+     <br>
+    대학원에서는 시뮬레이션 데이터를 기반으로 신뢰성 있는 예측 모델을 구축하고, 반복 실험 없이도 머신러닝을 활용하여 설계 검증이 가능한 해석 체계를 만드는 것을 목표로 하고 있습니다.
+    <br>
+    특정 프로그램에 국한되지 않고 다양한 해석 기법을 융합하여 실제 산업 문제를 해결할 수 있는 연구를 수행하고자 합니다.
+
+
+    </p>
+  </ul>
+</section>
+
+ </ul>
+</section>
+   
+ </article>
+  <article id="mainRight">
+    <section>
+    <section>
+
+  <h2><p><span style="border-radius: 5em; padding: 0.6em 1em; background: #F9F9F9; box-shadow: 1px 2px 10px rgba(0,0,0,0.2);  margin-left: 5px;">Projects & Initiatives</span></p></h2>
+  <ul>
+
+  <p><strong>해양공학 CAE 경진대회 참가</strong></p>
+  <ul>
+    <li>해수담수화 설비 내 배관에 유입된 입자에 의한 마모 문제를 해결하기 위해 Altair SimLab 기반 CFD 해석을 수행.</li>
+    <li>트위스티드 테이프 구조를 응용한 나선형 리브 설계를 통해 유동 제어 및 마모 최소화.</li>
+    <li>SimLab과 EDEM, SimSolid을 커플링하여 입자 거동–응력 해석–최적 설계까지 연계 수행.</li>
+  </ul>
+
+  <p><strong>세종시 그랜드 캡스톤 디자인 경진대회 참가</strong></p>
+  <ul>
+    <li>펠티어 소자를 활용한 방호복 내부 열관리 시스템 개발.</li>
+    <li>ElectroFlo 기반 열 해석, 금속폼을 적용한 냉각 구조 설계, CFD 기반 팬 형상 최적화 수행.</li>
+    <li>라즈베리파이와 열화상 카메라를 연동하여 자동 측정 시스템 구축.</li>
+  </ul>
+
+  <p><strong>머신러닝 기반 덕트 유동 최적화 모델 개발</strong></p>
+  <ul>
+    <li>SimLab을 활용해 수집한 CFD 데이터를 기반으로 GPR 기반 예측 모델 구축.</li>
+    <li>입출구 크기, 팬 날개 수, 입사각, 덕트 경사 등 다양한 설계변수 학습.</li>
+    <li>SHAP, LIME 해석 포함 신뢰도 분석 및 최적화까지 수행.</li>
+  </ul>
+
+  <p><strong>Altair AOC 참가 – 입자 믹싱 최적화</strong></p>
+  <ul>
+    <li>입자 혼합의 균일도를 향상시키기 위해 다양한 회전체 운동 조건을 구성.</li>
+    <li>Altair EDEM을 사용해 DEM 기반 입자 거동 해석 및 성능 평가 수행.</li>
+  </ul>
+
+  <p><strong>Altair 동아리 지원 프로그램 지원</strong></p>
+<ul>
+  <li>Altair Korea 주최 대학생 프로그램에 면접을 통해 선발되어 다양한 해석 소프트웨어 (SimLab, EDEM, SimSolid, Inspire)에 대한 기술 실습과 세미나 참여.</li>
+</ul>
+
+<p><strong>학술동아리 ‘멀티피직스 해석’ 창립</strong></p>
+<ul>
+  <li>CAE 기반의 학술적 탐구와 경진대회 준비를 위해 직접 동아리 설립.</li>
+  <li>복합물리 해석(CFD-구조 연성 등)을 중심으로 교내외 프로젝트 및 지원금 확보 활동 진행.</li>
+</ul>
+
+<p><strong>창업동아리 활동 – 시뮬레이션 서비스 기반 기술 검증</strong></p>
+<ul>
+  <li>OpenFOAM 등 오픈소스 플랫폼을 기반으로 CAE 서비스 모델 기획 및 해석 수행.</li>
+  <li>실제 기업의 구조/유동 문제를 모델링하고, 해석 교육 자료화 병행.</li>
+</ul>
+
+<p><strong>기어비 기반 홈트레이닝 장비 개발</strong></p>
+<ul>
+  <li>제약된 실내 공간에서도 사용 가능한 기어비 기반 운동기구 설계 및 시제품 제작.</li>
+  <li>기어비 계산, CATIA 모델링, 3D 프린팅 기반 실물 구현 완료.</li>
+</ul>
